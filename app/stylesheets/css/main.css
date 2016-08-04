@@ -1,13 +1,21 @@
 .toolbar {
-  background-color: gray;
+  background-color: #232638;
   width: 100vw;
-  height: 5vh; }
+  height: 6vh; }
   .toolbar .option {
     display: inline-block;
     color: white;
     font-family: sans-serif;
-    font-size: 12pt; }
+    font-size: 12pt;
+    height: 5vh;
+    width: 15vw;
+    border-style: solid;
+    border-color: #232638; }
+    .toolbar .option span .badge-red {
+      background-color: red;
+      color: white;
+      font-size: 10px; }
     .toolbar .option:hover {
-      background-color: LightGray;
-      border-style: solid;
-      border-bottom: green; }
+      border-color: #4B4E63;
+      background-color: #4B4E63;
+      border-bottom-color: green; }

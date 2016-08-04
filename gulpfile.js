@@ -4,9 +4,9 @@ var gulp = require('gulp'),
 connect = require('gulp-connect'),
 sass = require('gulp-sass');
 
-var sass_src = './app/stylesheets/**/*.scss';
-var sass_dest = './app/stylesheets/css';
-var html_src = './app/*.html';
+var sass_src = 'app/stylesheets/**/*.scss';
+var sass_dest = 'app/stylesheets/css';
+var html_src = 'app/*.html';
 
 gulp.task('connect', function() {
   connect.server({

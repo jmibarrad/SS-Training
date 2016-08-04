@@ -1,0 +1,30 @@
+
+.toolbar {
+  background-color: $toolbar-color;
+  width: 100vw;
+  height: 6vh;
+
+  .option {
+    display: inline-block;
+    color: white;
+    font-family:sans-serif;
+    font-size: 12pt;
+    height: 5vh;
+    width: 15vw;
+    border-style: solid;
+    border-color: $toolbar-color;
+
+    span .badge-red {
+      background-color: red;
+      color: white;
+      font-size: 10px;
+    }
+
+    &:hover {
+      border-color: $selected-option-color;
+      background-color: $selected-option-color;
+      border-bottom-color: green;
+    }
+  }
+
+}
