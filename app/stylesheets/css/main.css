@@ -1,0 +1,13 @@
+.toolbar {
+  background-color: gray;
+  width: 100vw;
+  height: 5vh; }
+  .toolbar .option {
+    display: inline-block;
+    color: white;
+    font-family: sans-serif;
+    font-size: 12pt; }
+    .toolbar .option:hover {
+      background-color: LightGray;
+      border-style: solid;
+      border-bottom: green; }

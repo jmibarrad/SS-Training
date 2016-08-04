@@ -1,0 +1,23 @@
+.toolbar {
+  background-color: gray;
+  width: 100vw;
+  height: 5vh;
+
+  .option {
+    display: inline-block;
+    color: white;
+    font-family:sans-serif;
+    font-size: 12pt;
+
+    .badge {
+
+    }
+
+    &:hover {
+      background-color: LightGray;
+      border-style: solid;
+      border-bottom: green;
+    }
+  }
+
+}
