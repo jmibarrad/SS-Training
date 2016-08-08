@@ -1,3 +1,21 @@
 
-$toolbar-color: #232638 !default;
-$selected-option-color: #4B4E63 !default;
+/* Toolbar */
+$default-gray: rgb(57, 66, 100) !default;
+$selection-gray: rgb(80, 89, 123) !default;
+$green-aqua: rgb(17, 168, 171) !default;
+$toolbar-height: 89px !default;
+$background-color:rgb(31, 37, 61) !default;
+
+  /* Option */
+  $option-width: 152px !default;
+  $icon-color: rgb(144, 153, 183) !default;
+  $option-font-family: "Myriad Pro" !default;
+  $option-font-size: 18px !default;
+  /* End Option */
+
+  /* Badge */
+  $badge-diameter: 20px !default;
+  $badge-red: rgb(230, 78, 101) !default;
+  /* End Badge */
+
+/*End Toolbar*/

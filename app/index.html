@@ -6,24 +6,29 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/css/main.css">
     <link rel="stylesheet" href="stylesheets/vendor/font-awesome/css/font-awesome.min.css">
   </head>
-  <body ng-app = "app">
+  <body class = "main" ng-app = "app">
     <div class="toolbar">
-      <div class="option">
-        <i class="fa fa-cog" aria-hidden="true">Settings</i>
 
+      <div style="display: table-cell">
+        <div class="option">
+          <i class="fa fa-cog" aria-hidden="true"></i> Settings
+        </div>
+        <div class="bottom-bar"></div>
       </div>
-      <div class="option">
-        <i class="fa fa-user" aria-hidden="true">Account</i>
 
-      </div>
       <div class="option">
-        <i class="fa fa-envelope" aria-hidden="true">Messages</i>
-
+        <i class="fa fa-user" aria-hidden="true"></i> Account
       </div>
+
       <div class="option">
-        <i class="fa fa-star" aria-hidden="true">Favorites</i>
-
+        <i class="fa fa-envelope" aria-hidden="true"></i> Messages
+        <div class = "badge-red">5</div>
       </div>
+
+      <div class="option">
+        <i class="fa fa-star-o" aria-hidden="true"></i> Favorites
+      </div>
+
     </div>
   </body>
 </html>

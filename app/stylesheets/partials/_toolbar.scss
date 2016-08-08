@@ -1,30 +1,42 @@
 
 .toolbar {
-  background-color: $toolbar-color;
-  width: 100vw;
-  height: 6vh;
+  background-color: $default-gray;
+  width: 100%;
+  height: $toolbar-height;
 
   .option {
-    display: inline-block;
+    display: table-cell;
     color: white;
-    font-family: sans-serif;
-    font-size: 12pt;
-    height: 5vh;
-    width: 15vw;
-    border-style: solid;
-    border-color: $toolbar-color;
+    height: $toolbar-height;
+    width: $option-width;
+    text-align: center;
+    vertical-align: middle;
+    font-family: $option-font-family;
+    font-size: $option-font-size;
 
-    span .badge-red {
-      background-color: red;
+    .badge-red {
+      background-color: $badge-red;
       color: white;
-      font-size: 10px;
+      font-size: 16px;
+      height: $badge-diameter;
+      width: $badge-diameter;
+      border-radius: 50%;
+      text-align: center;
+      vertical-align: middle;
+      margin-bottom: 35px;
+      display: inline-block;
+      padding: 2px 2px 2px 2px
     }
 
     &:hover {
-      border-color: $selected-option-color;
-      background-color: $selected-option-color;
-      border-bottom-color: green;
+      height: $toolbar-height - 4px;
+      background-color: $selection-gray;
+      border-bottom: 4px $green-aqua solid;
     }
   }
 
+  .fa {
+    color: $icon-color;
+    margin-right: 7px;
+  }
 }
