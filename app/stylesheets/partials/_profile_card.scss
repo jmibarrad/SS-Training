@@ -1,0 +1,79 @@
+.profile_card {
+  color: white;
+  font-family: $font-family;
+  height: 407px;
+  width: 300px;
+  background-color: $default-gray;
+  margin: 20px;
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+
+  .add-button-container {
+    height: 43px;
+  }
+
+  .image-container {
+    height: 192px;
+  }
+
+  .add-button {
+    margin: 13px 0 0 265px;
+    font-size: 24px;
+  }
+
+  .avatar {
+    margin: 0 0 0 75px;
+    height: $profile-avatar-diameter;
+    width: $profile-avatar-diameter;
+    border-radius: 50%;
+    background-color: $avatar-background;
+    border: $profile-avatar-border-diameter $avatar-border-color solid;
+  }
+
+  .description-container {
+    height: 112px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-left: 30px;
+    color: $selection-gray;
+  }
+
+  .buttons-container {
+    display: table-cell;
+    height: $bottom-button-height;
+
+    div:nth-child(1) {
+      border-top: 4px $badge-color solid;
+    }
+
+    div:nth-child(2) {
+      border-top: 4px $green-aqua solid;
+    }
+
+    div:nth-child(3) {
+      border-top: 4px $yellow solid;
+    }
+  }
+
+  .bottom-buttons {
+    display: table-cell;
+    height: $bottom-button-height - 4px;
+    width: $bottom-button-width;
+    vertical-align: middle;
+    text-align: center;
+    background-color: $selection-gray;
+    border-right: .01em black solid;
+
+    .button-icon {
+
+    }
+
+  }
+}

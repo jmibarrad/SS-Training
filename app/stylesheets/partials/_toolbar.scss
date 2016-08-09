@@ -1,29 +1,29 @@
 
 .toolbar {
   background-color: $default-gray;
-  width: 100%;
+  max-width: 100%;
   height: $toolbar-height;
+  font-family: $font-family;
+  font-size: $option-font-size;
+  color: white;
 
   .option {
     display: table-cell;
-    color: white;
     height: $toolbar-height;
     width: $option-width;
     text-align: center;
     vertical-align: middle;
-    font-family: $option-font-family;
-    font-size: $option-font-size;
 
     .badge-red {
-      background-color: $badge-red;
+      background-color: $badge-color;
       color: white;
       font-size: 16px;
+      text-align: center;
+      vertical-align: middle;
       height: $badge-diameter;
       width: $badge-diameter;
       border-radius: 50%;
-      text-align: center;
-      vertical-align: middle;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
       display: inline-block;
       padding: 2px 2px 2px 2px
     }
@@ -35,8 +35,31 @@
     }
   }
 
-  .fa {
-    color: $icon-color;
-    margin-right: 7px;
+  .user {
+    display: table-cell;
+    position: absolute;
+    height: $toolbar-height;
+    width: 20%;
+    left: 90%;
+    top:  35px;
+
+    .name {
+        margin-right: 12px;
+        display: inline-block;
+    }
+
   }
+
+  .avatar {
+    top: 18px;
+    left: 95%;
+    position: absolute;
+    display: inline-block;
+    background-color: $avatar-background;
+    border-radius: 50%;
+    height: $avatar-diameter;
+    width: $avatar-diameter;
+    border: $avatar-border-diameter $avatar-border-color solid;
+  }
+
 }

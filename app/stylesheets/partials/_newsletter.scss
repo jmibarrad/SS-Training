@@ -1,0 +1,65 @@
+.newsletter {
+  height: $newsletter-height;
+  width: $newsletter-width;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: $default-gray;
+  color: white;
+  font-family: $font-family;
+  margin: 20px;
+  text-align: center;
+
+  .title-offset {
+    height: 31px  ;
+  }
+
+  .title {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0px;
+  }
+
+  .email-box {
+    line-height: 50px;
+    margin-left: 25px;
+    height: 50px;
+    width: 260px;
+    background-color: $selection-gray;
+    border-radius: 5px;
+    border: 2px $green-aqua solid;
+
+    i.fa {
+      position: relative;
+      top: 4px;
+      //right: 37px;
+      font-size: 24px;
+      /*float: left;
+      margin-top: 10px;
+      margin-left: 13px;
+      position: relative;*/
+      color: $icon-color;
+    }
+
+    .email-input {
+        background-color: $selection-gray;
+        border: none;
+        font-size: 16px;
+        color: white;
+
+        &:focus {
+          outline: none;
+        }
+    }
+
+  }
+
+  .subscribe {
+    line-height: 50px;
+    width: 175px;
+    height: 50px;
+    background-color: $green-aqua;
+    border-radius: 5px;
+    margin-top: 27px;
+    margin-left: 63px;
+  }
+}

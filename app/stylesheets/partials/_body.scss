@@ -1,3 +1,12 @@
 .main {
   background-color: $background-color;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.fa {
+  color: $icon-color;
+  margin-right: 7px;
 }

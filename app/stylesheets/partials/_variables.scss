@@ -1,21 +1,60 @@
-
-/* Toolbar */
+/* General */
 $default-gray: rgb(57, 66, 100) !default;
 $selection-gray: rgb(80, 89, 123) !default;
 $green-aqua: rgb(17, 168, 171) !default;
-$toolbar-height: 89px !default;
+$font-family: "Myriad Pro" !default;
 $background-color:rgb(31, 37, 61) !default;
+
+
+/* Toolbar */
+$toolbar-height: 80px !default;
 
   /* Option */
   $option-width: 152px !default;
   $icon-color: rgb(144, 153, 183) !default;
-  $option-font-family: "Myriad Pro" !default;
   $option-font-size: 18px !default;
   /* End Option */
 
   /* Badge */
   $badge-diameter: 20px !default;
-  $badge-red: rgb(230, 78, 101) !default;
+  $badge-color: rgb(230, 78, 101) !default;
   /* End Badge */
 
+  /* Avatar */
+  $avatar-background: rgb(120, 120, 120) !default;
+  $avatar-diameter: 40px !default;
+  $avatar-border-color: rgb(76, 85, 119) !default;
+  $avatar-border-diameter: 2px !default;
+  /* End Avatar*/
+
 /*End Toolbar*/
+
+/* Menu Box */
+$item-height: 60px !default;
+$item-width: 300px !default;
+
+  /* Badge Item*/
+  $badge-item-width: 37px !default;
+  $badge-item-height: 24px !default;
+  /* End Badge Item*/
+
+
+/* End Menu Box*/
+
+/* Profile Card */
+$profile-avatar-border-diameter: 5px !default;
+$profile-avatar-diameter: 160px - $profile-avatar-border-diameter !default;
+
+  /* Bottom Buttons */
+  $bottom-button-height: 60px;
+  $bottom-button-width: 100px;
+  $yellow: rgb(252, 177, 80) !default;
+  /* Bottom Buttons*/
+
+/* End Profile Card */
+
+
+/* Newsletter */
+$newsletter-height: 228px;
+$newsletter-width: 300px;
+/* End Newsletter */

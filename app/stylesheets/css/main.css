@@ -1,41 +1,219 @@
+/* General */
 /* Toolbar */
 /* Option */
 /* End Option */
 /* Badge */
 /* End Badge */
+/* Avatar */
+/* End Avatar*/
 /*End Toolbar*/
+/* Menu Box */
+/* Badge Item*/
+/* End Badge Item*/
+/* End Menu Box*/
+/* Profile Card */
+/* Bottom Buttons */
+/* Bottom Buttons*/
+/* End Profile Card */
+/* Newsletter */
+/* End Newsletter */
 .main {
-  background-color: #1f253d; }
+  background-color: #1f253d;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  overflow: hidden; }
+
+.fa {
+  color: #9099b7;
+  margin-right: 7px; }
 
 .toolbar {
   background-color: #394264;
-  width: 100%;
-  height: 89px; }
+  max-width: 100%;
+  height: 80px;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  color: white; }
   .toolbar .option {
     display: table-cell;
-    color: white;
-    height: 89px;
+    height: 80px;
     width: 152px;
     text-align: center;
-    vertical-align: middle;
-    font-family: "Myriad Pro";
-    font-size: 18px; }
+    vertical-align: middle; }
     .toolbar .option .badge-red {
       background-color: #e64e65;
       color: white;
       font-size: 16px;
+      text-align: center;
+      vertical-align: middle;
       height: 20px;
       width: 20px;
       border-radius: 50%;
-      text-align: center;
-      vertical-align: middle;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
       display: inline-block;
       padding: 2px 2px 2px 2px; }
     .toolbar .option:hover {
-      height: 85px;
+      height: 76px;
       background-color: #50597b;
       border-bottom: 4px #11a8ab solid; }
-  .toolbar .fa {
-    color: #9099b7;
-    margin-right: 7px; }
+  .toolbar .user {
+    display: table-cell;
+    position: absolute;
+    height: 80px;
+    width: 20%;
+    left: 90%;
+    top: 35px; }
+    .toolbar .user .name {
+      margin-right: 12px;
+      display: inline-block; }
+  .toolbar .avatar {
+    top: 18px;
+    left: 95%;
+    position: absolute;
+    display: inline-block;
+    background-color: #787878;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: 2px #4c5577 solid; }
+
+.menu-box {
+  margin: 20px;
+  color: white;
+  font-family: "Myriad Pro"; }
+  .menu-box .header {
+    display: table-cell;
+    font-size: 18px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 60px;
+    width: 300px;
+    background-color: #11a8ab;
+    text-align: center;
+    vertical-align: middle; }
+  .menu-box .item {
+    display: table;
+    line-height: 60px;
+    background-color: #394264;
+    height: 60px;
+    width: 300px;
+    font-size: 16px;
+    vertical-align: middle;
+    border-bottom: .01em black solid; }
+    .menu-box .item .text {
+      margin-left: 22px; }
+    .menu-box .item .badge-item {
+      position: absolute;
+      margin: -43px 0 0 250px;
+      text-align: center;
+      line-height: 24px;
+      height: 24px;
+      width: 37px;
+      background-color: #50597b;
+      border-radius: 40%; }
+    .menu-box .item:hover {
+      background-color: #50597b; }
+      .menu-box .item:hover .fa {
+        color: white; }
+      .menu-box .item:hover .badge-item {
+        background-color: #e64e65; }
+
+.profile_card {
+  color: white;
+  font-family: "Myriad Pro";
+  height: 407px;
+  width: 300px;
+  background-color: #394264;
+  margin: 20px;
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px; }
+  .profile_card .add-button-container {
+    height: 43px; }
+  .profile_card .image-container {
+    height: 192px; }
+  .profile_card .add-button {
+    margin: 13px 0 0 265px;
+    font-size: 24px; }
+  .profile_card .avatar {
+    margin: 0 0 0 75px;
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+    background-color: #787878;
+    border: 5px #4c5577 solid; }
+  .profile_card .description-container {
+    height: 112px; }
+  .profile_card .title {
+    font-size: 24px; }
+  .profile_card .subtitle {
+    font-size: 16px;
+    margin-left: 30px;
+    color: #50597b; }
+  .profile_card .buttons-container {
+    display: table-cell;
+    height: 60px; }
+    .profile_card .buttons-container div:nth-child(1) {
+      border-top: 4px #e64e65 solid; }
+    .profile_card .buttons-container div:nth-child(2) {
+      border-top: 4px #11a8ab solid; }
+    .profile_card .buttons-container div:nth-child(3) {
+      border-top: 4px #fcb150 solid; }
+  .profile_card .bottom-buttons {
+    display: table-cell;
+    height: 56px;
+    width: 100px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #50597b;
+    border-right: .01em black solid; }
+
+.newsletter {
+  height: 228px;
+  width: 300px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #394264;
+  color: white;
+  font-family: "Myriad Pro";
+  margin: 20px;
+  text-align: center; }
+  .newsletter .title-offset {
+    height: 31px; }
+  .newsletter .title {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0px; }
+  .newsletter .email-box {
+    line-height: 50px;
+    margin-left: 25px;
+    height: 50px;
+    width: 260px;
+    background-color: #50597b;
+    border-radius: 5px;
+    border: 2px #11a8ab solid; }
+    .newsletter .email-box i.fa {
+      position: relative;
+      top: 4px;
+      font-size: 24px;
+      /*float: left;
+      margin-top: 10px;
+      margin-left: 13px;
+      position: relative;*/
+      color: #9099b7; }
+    .newsletter .email-box .email-input {
+      background-color: #50597b;
+      border: none;
+      font-size: 16px;
+      color: white; }
+      .newsletter .email-box .email-input:focus {
+        outline: none; }
+  .newsletter .subscribe {
+    line-height: 50px;
+    width: 175px;
+    height: 50px;
+    background-color: #11a8ab;
+    border-radius: 5px;
+    margin-top: 27px;
+    margin-left: 63px; }

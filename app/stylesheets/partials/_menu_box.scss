@@ -1,0 +1,56 @@
+.menu-box {
+  margin: 20px;
+  color: white;
+  font-family: $font-family;
+
+  .header {
+    display: table-cell;
+    font-size: 18px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: $item-height;
+    width: $item-width;
+    background-color: $green-aqua;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .item {
+    display: table;
+    line-height: $item-height;
+    background-color: $default-gray;
+    height: $item-height;
+    width: $item-width;
+    font-size: 16px;
+    vertical-align: middle;
+    border-bottom: .01em black solid;
+
+    .text {
+      margin-left: 22px;
+    }
+
+    .badge-item {
+      position: absolute;
+      margin: -43px 0 0 250px;
+      text-align: center;
+      line-height: $badge-item-height;
+      height: $badge-item-height;
+      width: $badge-item-width;
+      background-color: $selection-gray;
+      border-radius: 40%;
+    }
+
+    &:hover {
+      background-color: $selection-gray;
+
+      .fa {
+        color: white;
+      }
+
+      .badge-item {
+        background-color: $badge-color;
+      }
+    }
+  }
+
+}
