@@ -7,7 +7,7 @@
           restrict: 'E',
           transclude: true,
           scope: {
-            title: '='
+            data: '='
           },
           templateUrl: 'components/newsletter/newsletter.html',
           controller: 'newsletterController',

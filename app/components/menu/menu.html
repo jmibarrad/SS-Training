@@ -1,15 +1,13 @@
 <div class="menu-box">
-  <div class="header" ng-bind = "title"> Menu Box
+  <div class="header" ng-bind = "vm.title"> </div>
 
+  <div class="item" ng-repeat = "item in vm.items">
+    <i class="fa fa-{{item.icon}} fa-fw text" aria-hidden="true">
+    </i> {{item.title}}
+    <div class = "badge-item" ng-if = "item.badge">{{item.badge}}</div>
   </div>
 
-  <div class="item">
-    <i class="fa fa-envelope-o fa-fw text" aria-hidden="true">
-    </i> Messages
-    <div class = "badge-item">24</div>
-  </div>
-
-  <div class="item">
+  <!--<div class="item">
     <i class="fa fa-paper-plane-o fa-fw text" aria-hidden="true">
     </i> Invites
     <div class = "badge-item">3</div>
@@ -29,6 +27,6 @@
   <div class="item">
     <i class="fa fa-line-chart fa-fw text" aria-hidden="true">
     </i> Statistics
-  </div>
+  </div>-->
 
 </div>

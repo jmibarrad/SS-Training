@@ -1,0 +1,14 @@
+<div class="toolbar">
+
+    <div class="option" ng-repeat = "option in vm.options">
+      <i class="fa fa-{{option.icon}}" aria-hidden="true"></i> {{option.title}}
+      <div class = "badge-red" ng-if = "option.badge" ng-bind = "option.badge"></div>
+    </div>
+
+  <div class="user">
+    <span class = "name" ng-bind = "vm.user.username"></span> <i class="fa fa-chevron-down" aria-hidden="true"></i>
+  </div>
+
+  <div class="avatar"> </div>
+
+</div>

@@ -11,7 +11,8 @@
   </head>
   <body class = "main" ng-controller = "MainController as main">
 
-    <div class="toolbar">
+    <toolbar data = "main.toolbar"></toolbar>
+    <!--<div class="toolbar">
 
       <div style="display: table-cell">
         <div class="option">
@@ -38,9 +39,10 @@
 
       <div class="avatar"> </div>
 
-    </div>
+    </div>-->
 
-    <div class="menu-box">
+    <menu-box data = "main.menuBox"></menu-box>
+    <!--<div class="menu-box">
       <div class="header"> Menu Box
 
       </div>
@@ -73,9 +75,11 @@
         </i> Statistics
       </div>
 
-    </div>
+    </div>-->
 
-    <div class="profile_card">
+
+    <profile-card data = "main.profileCard"></profile-card>
+    <!--<div class="profile_card">
       <div class="add-button-container">
         <i class="fa fa-plus-circle add-button" aria-hidden="true"></i>
       </div>
@@ -103,8 +107,9 @@
             <i class="fa fa-heart-o" aria-hidden="true"></i>49
           </div>
       </div>
-    </div>
-    <newsletter title = "main.newsletterTitle"></newsletter>
+    </div>-->
+
+    <newsletter data = "main.newsletter"></newsletter>
     <!--<div class="newsletter">
       <div class="title-offset"></div>
       <p class="title"> Join the newsletter </p>
@@ -120,7 +125,12 @@
     <script src="app.js"></script>
     <script src="components/newsletter/newsletter.controller.js"></script>
     <script src="components/newsletter/newsletter.directive.js"></script>
-
+    <script src="components/menu/menu.controller.js"></script>
+    <script src="components/menu/menu.directive.js"></script>
+    <script src="components/profile_card/profile_card.controller.js"></script>
+    <script src="components/profile_card/profile_card.directive.js"></script>
+    <script src="components/toolbar/toolbar.controller.js"></script>
+    <script src="components/toolbar/toolbar.directive.js"></script>
 
   </body>
 </html>

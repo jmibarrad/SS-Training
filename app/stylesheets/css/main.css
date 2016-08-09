@@ -153,13 +153,18 @@
     color: #50597b; }
   .profile_card .buttons-container {
     display: table-cell;
-    height: 60px; }
-    .profile_card .buttons-container div:nth-child(1) {
-      border-top: 4px #e64e65 solid; }
-    .profile_card .buttons-container div:nth-child(2) {
-      border-top: 4px #11a8ab solid; }
-    .profile_card .buttons-container div:nth-child(3) {
-      border-top: 4px #fcb150 solid; }
+    height: 60px;
+    /*div:nth-child(1) {
+      border-top: 4px $badge-color solid;
+    }
+
+    div:nth-child(2) {
+      border-top: 4px $green-aqua solid;
+    }
+
+    div:nth-child(3) {
+      border-top: 4px $yellow solid;
+    }*/ }
   .profile_card .bottom-buttons {
     display: table-cell;
     height: 56px;

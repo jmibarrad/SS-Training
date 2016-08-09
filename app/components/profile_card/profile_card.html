@@ -1,0 +1,19 @@
+<div class="profile_card">
+  <div class="add-button-container">
+    <i class="fa fa-plus-circle add-button" aria-hidden="true"></i>
+  </div>
+
+  <div class="image-container">
+    <div class="avatar"></div>
+  </div>
+
+  <div class="description-container">
+    <span class="title" ng-bind = "vm.username"></span>
+    <p class="subtitle" ng-bind = "vm.user_description"> </p>
+  </div>
+  <div class="buttons-container" ng-repeat = "button in vm.buttons" style = "border-top: 4px {{button.color}} solid">
+      <div class="bottom-buttons">
+        <i class="fa fa-{{button.icon}}" aria-hidden="true"></i>{{button.views}}
+      </div>
+  </div>
+</div>
