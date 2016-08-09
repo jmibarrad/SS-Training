@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html ng-app = "app">
   <head>
     <meta charset="utf-8">
     <title>Training</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/css/main.css">
     <link rel="stylesheet" href="stylesheets/vendor/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+    </script>
   </head>
-  <body class = "main" ng-app = "app">
+  <body class = "main" ng-controller = "MainController as main">
+
     <div class="toolbar">
 
       <div style="display: table-cell">
@@ -100,18 +104,23 @@
           </div>
       </div>
     </div>
-
-    <div class="newsletter">
+    <newsletter title = "main.newsletterTitle"></newsletter>
+    <!--<div class="newsletter">
       <div class="title-offset"></div>
       <p class="title"> Join the newsletter </p>
 
       <div class="email-box">
         <i class="fa fa-envelope-o"></i>
-        <!--<input class = "email-input" type="text">-->
+        <input class = "email-input" type="text">
       </div>
 
       <div class="subscribe"> Subscribe </div>
-    </div>
+    </div>-->
+
+    <script src="app.js"></script>
+    <script src="components/newsletter/newsletter.controller.js"></script>
+    <script src="components/newsletter/newsletter.directive.js"></script>
+
 
   </body>
 </html>
