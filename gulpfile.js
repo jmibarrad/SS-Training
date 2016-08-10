@@ -51,7 +51,7 @@ gulp.task('compress', ['babel'], (cb) => {
 
 gulp.task('minify-css', () => {
     return gulp.src('app/stylesheets/css/main.css')
-        .pipe(cleanCSS({debug: true}, function(details) {
+        .pipe(cleanCSS({debug: true, compatibility: 'ei8'}, function(details) {
             console.log(details.name + ': ' + details.stats.originalSize);
             console.log(details.name + ': ' + details.stats.minifiedSize);
         }))
