@@ -36,14 +36,14 @@ gulp.task('babel', () => {
         .pipe(babel({
             presets: ['es2015']
         }))
-        .pipe(gulp.dest('app/temp'));
+        .pipe(gulp.dest('./app/temp'));
 });
 
 gulp.task('compress', ['babel'], (cb) => {
   pump([
         gulp.src('app/temp/**/*.js'),
         uglify(),
-        gulp.dest('app/dist')
+        gulp.dest('./app/dist')
     ],
     cb
   );
