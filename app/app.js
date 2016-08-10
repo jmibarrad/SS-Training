@@ -18,9 +18,11 @@ app.controller('MainController', ['$scope', function ($scope){
   };
 
   ctrl.profileCard = {
-    username: 'Anne Hathaway',
-    image_src: '',
-    user_description: 'Lorem ipsum dolor sit amet consectetuer adipiscing',
+    user: {
+            username: 'Anne Hathaway',
+            img_scr: '',
+            user_description: 'Lorem ipsum dolor sit amet consectetuer adipiscing'
+          },
     buttons: [
               { icon: 'comment-o', views: 23, color: 'rgb(230, 78, 101)'},
               { icon: 'eye', views: 841, color: 'rgb(17, 168, 171)'},
