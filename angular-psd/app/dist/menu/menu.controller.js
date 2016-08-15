@@ -1,0 +1,1 @@
+"use strict";!function(){function t(t){var e=this;e.title=e.data.title,e.items=e.data.items}angular.module("app").controller("menuBoxController",t),t.$inject=["$scope"]}();

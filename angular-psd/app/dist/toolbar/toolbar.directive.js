@@ -1,0 +1,1 @@
+"use strict";!function(){function o(){return{restrict:"E",transclude:!0,scope:{data:"="},templateUrl:"components/toolbar/toolbar.html",controller:"toolbarController",controllerAs:"vm",bindToController:!0}}angular.module("app").directive("toolbar",o)}();

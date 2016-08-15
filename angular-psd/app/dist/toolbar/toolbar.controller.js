@@ -1,0 +1,1 @@
+"use strict";!function(){function o(o){var t=this;t.user=t.data.user,t.options=t.data.options}angular.module("app").controller("toolbarController",o),o.$inject=["$scope"]}();

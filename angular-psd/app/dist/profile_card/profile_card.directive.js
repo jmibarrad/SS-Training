@@ -1,0 +1,1 @@
+"use strict";!function(){function r(){return{restrict:"E",transclude:!0,scope:{data:"="},templateUrl:"components/profile_card/profile_card.html",controller:"profileCardController",controllerAs:"vm",bindToController:!0}}angular.module("app").directive("profileCard",r)}();

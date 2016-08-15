@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app = "app">
+  <head>
+    <meta charset="utf-8">
+    <title>Training</title>
+    <link rel="stylesheet" type="text/css" href="dist/main.min.css">
+    <link rel="stylesheet" href="stylesheets/vendor/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src='plugins/plugin.js'></script>
+
+  </head>
+  <body class = "main" ng-controller = "MainController as main">
+
+    <toolbar data = "main.toolbar"></toolbar>
+
+    <menu-box data = "main.menuBox"></menu-box>
+
+    <profile-card data = "main.profileCard"></profile-card>
+
+    <newsletter data = "main.newsletter"></newsletter>
+
+    <input class="password">
+    <script src="app.js"></script>
+    <script src="dist/newsletter/newsletter.controller.js"></script>
+    <script src="dist/newsletter/newsletter.directive.js"></script>
+    <script src="dist/menu/menu.controller.js"></script>
+    <script src="dist/menu/menu.directive.js"></script>
+    <script src="dist/profile_card/profile_card.controller.js"></script>
+    <script src="dist/profile_card/profile_card.directive.js"></script>
+    <script src="dist/toolbar/toolbar.controller.js"></script>
+    <script src="dist/toolbar/toolbar.directive.js"></script>
+
+  </body>
+</html>

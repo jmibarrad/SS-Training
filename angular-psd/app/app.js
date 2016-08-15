@@ -41,4 +41,6 @@ app.controller('MainController', ['$scope', function ($scope){
           ]
   };
 
+  $('.password').verifyPasswordStrength();
+
 }]);

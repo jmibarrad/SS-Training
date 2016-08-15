@@ -1,0 +1,1 @@
+"use strict";!function(){function e(e){}angular.module("app").controller("newsletterController",e),e.$inject=["$scope"]}();

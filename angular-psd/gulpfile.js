@@ -9,9 +9,21 @@ const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 const pump = require('pump');
 
+const browserify = require('browserify');
+//const source = require('vinyl-source-stream');
+//const streamify = require('gulp-streamify')
+
 var sass_src = 'app/stylesheets/**/*.scss';
 var sass_dest = 'app/stylesheets/css';
 var html_src = 'app/*.html';
+
+/*gulp.task('browserify', function(){
+  return browserify('my_file_with_import_module')
+    .bundle({debug: true})
+    .pipe(source('bundle.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('path_to_output_file'));
+});*/
 
 gulp.task('connect', () => {
   connect.server({

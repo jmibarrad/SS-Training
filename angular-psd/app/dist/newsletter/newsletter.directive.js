@@ -1,0 +1,1 @@
+"use strict";!function(){function e(){return{restrict:"E",transclude:!0,scope:{data:"="},templateUrl:"components/newsletter/newsletter.html",controller:"newsletterController",controllerAs:"vm",bindToController:!0}}angular.module("app").directive("newsletter",e)}();
