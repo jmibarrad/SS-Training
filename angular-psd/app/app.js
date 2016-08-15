@@ -1,6 +1,6 @@
 var app = angular.module('app', []);
 
-app.controller('MainController', ['$scope', function ($scope){
+app.controller('MainController', ['$scope', '$filter', function ($scope, $filter){
   var ctrl = this;
 
   ctrl.toolbar = {
@@ -40,6 +40,8 @@ app.controller('MainController', ['$scope', function ($scope){
               { title: 'Statistics', icon: 'line-chart'}
           ]
   };
+  //console.log($filter('roman-decimal')('CMXC'));
+  console.log($filter('decimal-roman')(3990));
 
   $('.password').verifyPasswordStrength();
 

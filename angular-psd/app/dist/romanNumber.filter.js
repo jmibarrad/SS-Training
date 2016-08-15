@@ -1,0 +1,1 @@
+"use strict";!function(){app.filter("roman-decimal",function(){var r={M:1e3,D:500,C:100,L:50,X:10,V:5,I:1},e=new RegExp("^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$"),t=0;return function(n){if(n=n.toUpperCase(),!e.test(n))return n;for(var a=n.length-1;a>=0;a--){var i=r[n[a-1]],u=r[n[a]];i<u?(t+=u-i,a--):t+=u}return t}})}();

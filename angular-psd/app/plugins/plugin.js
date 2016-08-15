@@ -7,7 +7,7 @@
   const hasUppercase = new RegExp('(.[A-Z]+)');
   const hasSymbol = new RegExp('(.[!@#\$%\^&\*]+)');
   const hasLowercase = new RegExp('(.[a-z]+)');
-  const hasMininumLenght = new RegExp('(.{'+mininumLength+',})');
+  const hasMininumLenght = new RegExp('(.{' + mininumLength + ',})');
   const hasNumericValue = new RegExp('(.[0-9]+)');
 
 
@@ -15,7 +15,7 @@
   let rules = [
                 {regex: hasLowercase, error: 'Must contain at least a lowercase letter.'},
                 {regex: hasUppercase, error: 'Must contain at least an uppercase letter.'},
-                {regex: hasMininumLenght, error: 'Must contain at least '+mininumLength+' characters.'},
+                {regex: hasMininumLenght, error: 'Must contain at least ' + mininumLength + ' characters.'},
                 {regex: hasNumericValue, error: 'Must contain at least a numeric value.'},
                 {regex: hasSymbol, error: 'Must contain at least an special symbol.'}
               ];
