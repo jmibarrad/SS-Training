@@ -15,6 +15,7 @@
     vm.user_description = vm.data.user.user_description;
     vm.buttons = vm.data.buttons;
 
+/*
     vm.colors = vm.buttons.map(s => s.color);
     console.log(vm.colors);
 
@@ -35,6 +36,7 @@
     console.log('copy');
 
     console.log(objCopy);
+*/
 
   };
 

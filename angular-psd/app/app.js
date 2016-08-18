@@ -40,7 +40,8 @@ app.controller('MainController', ['$scope', '$filter', function ($scope, $filter
               { title: 'Statistics', icon: 'line-chart'}
           ]
   };
-  //console.log($filter('roman-decimal')('CMXC'));
+
+  console.log($filter('roman-decimal')('CMXC'));
   console.log($filter('decimal-roman')(3990));
 
   $('.password').verifyPasswordStrength();
