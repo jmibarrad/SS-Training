@@ -18,28 +18,38 @@
     
     .block {
         background-color: LightGray;
-        height: 40px;
-        width: 900px;
+        height: 30px;
         margin-bottom: 20px;
+        display: table-cell;
     } 
+
+    div {
+      width: 300px;
+      border-right: 4px white solid;
+
+    }
+    input {
+      width: 100px;
+    }
 
   </style>
   
   <body>
     <div class="block">
+      <span>Text</span>
       <input id="text" type="text" pattern = "^[0-9]*$" minlength="3" maxlength="10">
     </div>
     <div class="block">
+      <span>Email</span>
       <input id="email" type="email">
     </div>
     <div class="block">
+      <span>Password</span>
       <input id="password" type="password">
     </div>
     <div class="block">
+      <span>Number</span>
       <input id="number" type="number" min = "0" max = "100">
-    </div>
-    <div class="block">
-      <input id="text" type="checkbox">
     </div>
     <script>
 

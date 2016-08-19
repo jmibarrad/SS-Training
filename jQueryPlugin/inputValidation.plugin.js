@@ -9,7 +9,7 @@ var rules = [];
 
 	$.fn.validate = validate;
 
-	function validate () {
+	function validate() {
 		
 		$input = $(this);
 		const type = $input.attr('type');
@@ -27,8 +27,6 @@ var rules = [];
 				Text.validate();
 			else if (type === 'email')
 				Email.validate();
-			else if (type === 'checkbox')
-				Checkbox.validate();
 			else if (type === 'number')
 				_Number.validate();
 

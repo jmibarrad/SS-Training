@@ -15,7 +15,7 @@ var Email = {
 		const required = $input.attr('required');
 		const pattern = $input.attr('pattern');
 
-		function verifyAttributes () {
+		function verifyAttributes() {
 			if (rulesExecuted) return;
 			rules = [];
 			if (pattern){
