@@ -5,7 +5,7 @@ var Required = function() {
 };
 
 Required.prototype.evaluate = function(value){
- 	return new RegExp('\S').text(value);
+ 	return new RegExp('\S').test(value);
 };
 
 var Min = function(value) {
