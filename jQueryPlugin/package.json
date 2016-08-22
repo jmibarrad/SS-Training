@@ -1,0 +1,27 @@
+{
+  "name": "plugin",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jose Ibarra",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "browserify-global-shim": "^1.0.3",
+    "gulp-concat-util": "^0.5.5",
+    "gulp-connect": "^5.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js"
+  },
+  "browserify-shim": {
+    "jquery": "$"
+  }
+}
+
+
+ 
